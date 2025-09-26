@@ -13,40 +13,40 @@ void main() {
 
   // 배열에서 값을 하나하나 꺼낼때 사용.
   // 모를땐 값을 찍어보자!!
-  // for (var a in cart) {
-  //   if (a == '티셔츠') {
-  //     total = total + 10000;
-  //   } else if (a == '바지') {
-  //     total = total + 8000;
-  //   } else if (a == '모자') {
-  //     total = total + 4000;
-  //   } else {}
+  for (var a in cart) {
+    if (a == '티셔츠') {
+      total = total + 10000;
+    } else if (a == '바지') {
+      total = total + 8000;
+    } else if (a == '모자') {
+      total = total + 4000;
+    } else {}
 
-  // }
-
-  for (String value in cart) {
-    switch (value) {
-      case "티셔츠":
-        total = total + 10000;
-        break;
-      case "바지":
-        total = total + 8000;
-        break;
-      case "모자":
-        total = total + 4000;
-        break;
-    }
   }
-
-  print(total);
+    //경범 형님이 푼방식  이해만 해보기
+  // for (String value in cart) {
+  //   switch (value) {
+  //     case "티셔츠":
+  //       total = total + 10000;
+  //       break;
+  //     case "바지":
+  //       total = total + 8000;
+  //       break;
+  //     case "모자":
+  //       total = total + 4000;
+  //       break;
+  //   }
+  // }
 
   // print(total);
 
-  // if (total >= 20000) {
-  //   discount = total ~/ 10;
-  // }
-  // print(discount);
+  print(total);
 
-  // _final = total - discount;
-  // print(_final);
+  if (total >= 20000) {
+    discount = total ~/ 10;
+  }
+  print(discount);
+
+  _final = total - discount;
+  print(_final);
 }
